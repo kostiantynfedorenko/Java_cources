@@ -9,10 +9,9 @@ public class MyTaskThreeSecondLesson {
 		double R; // Circle radius
 		System.out.println("Input circle radius: ");
 		R = Math.abs(sc.nextDouble());
-		if (R >= 0) {
 			double L = 2 * Math.PI * R;
 			System.out.println("Circle's length equals to " + L);
-		}
+		sc.close();
 	}
 
 }
