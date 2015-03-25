@@ -20,7 +20,7 @@ public class MyTaskTwoSecondLesson {
 			System.out.println("Triangle's square equals to " + S);
 		} else
 			System.out.println("Triangle's dimensions entered are wrong, sorry");
-		
+		sc.close();
 	}
 
 }
