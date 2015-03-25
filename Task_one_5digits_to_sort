@@ -24,6 +24,7 @@ public class MyTaskOneSecondLesson {
 			}
 		} else
 			System.out.println("Please enter 5-digit number");
+		sc.close();
 	}
 
 }
