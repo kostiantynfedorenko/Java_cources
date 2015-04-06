@@ -29,15 +29,19 @@ public class MyTask2 {
 
 	public static void main(String[] args) {
 		int currval = 0;
+		int maxval = 0;
 		for (int i = 100; i <= 999; i++) {
 			for (int j = 100; j <= 999; j++) {
 				boolean palindr = ispal(i, j);
 				if (palindr == true) {
 					currval = i * j;
+					if (currval > maxval) {
+						maxval = currval;
+					}
 				}
 			}
 		}
-		System.out.println(currval);
+		System.out.println(maxval);
 	}
 
 }
