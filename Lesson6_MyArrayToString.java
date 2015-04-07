@@ -7,7 +7,7 @@ import java.util.Random;
  * Написать свой вариант метода Arrays.toString() для int[].
  *
  */
-public class MyArrayToInt {
+public class MyArrayToString {
 	static StringBuffer int_to_str(int[] c, StringBuffer b) {
 		for (int i = 0; i < c.length; i++) {
 			if (i == 0) {
