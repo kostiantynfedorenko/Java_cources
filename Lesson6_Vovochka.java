@@ -14,19 +14,20 @@ public class MyVovochka {
 		char[] Vovochka_char = Vovochka.toCharArray();
 		char checkpoint = Vovochka_char[0];
 		int index = 0;
+		String str_check1 = "0";
+		String str_check2 = "0";
 		for (int len = 1; len < Vovochka_char.length; len++) {
 			if (Vovochka_char[len] == checkpoint) {
 				index = len;
-				break;
+				str_check1 = Vovochka.substring(0,index);
+				str_check2 = Vovochka.substring(index,index+index);
+				if (str_check1.equals(str_check2) == true){
+					break;	
+				}
 			}
 		}
-		StringBuffer sb=new StringBuffer();
-		for (int i = 0; i <= index-1; i++){
-			sb.append(Vovochka_char[i]);
-		}
-		String str = sb.toString();
 		System.out.println("Time: " + (System.currentTimeMillis() - t));
-		System.out.println("Vovochka's minimal number is: "+str);
+		System.out.println("Vovochka's minimal number is: "+str_check1);
 		sc.close();
 	}
 
