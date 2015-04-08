@@ -26,6 +26,9 @@ public class MyVovochka {
 				}
 			}
 		}
+		if (str_check1.equals("0") == true) {
+			str_check1 = Vovochka;
+		}
 		System.out.println("Time: " + (System.currentTimeMillis() - t));
 		System.out.println("Vovochka's minimal number is: "+str_check1);
 		sc.close();
